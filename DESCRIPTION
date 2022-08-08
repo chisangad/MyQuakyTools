@@ -1,0 +1,24 @@
+Package: MyQuakyTools
+Title: Functions for everyday genomics analysis
+Version: 0.0.1.001
+Depends: R (>= 3.1.0)
+Authors@R: 
+    person(given = "David",
+           family = "Chisanga",
+           role = c("aut", "cre"),
+           email = "chisanga.d@wehi.edu.au")
+Description: This package is a  collection of functions often used when performing genomics analysis.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.1
+Imports:
+  R.oo,
+  knitr,
+  R.utils,
+  kableExtra,
+  gplots,
+  RColorBrewer,
+  AnnotationDbi,
+  org.Hs.eg.db,
+  org.Mm.eg.db
