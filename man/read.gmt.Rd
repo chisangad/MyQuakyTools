@@ -10,12 +10,15 @@ read.gmt(gmt.file)
 \item{gmt.file}{Path to gmt file}
 }
 \value{
-Returns a list of pathways and corresponding gene IDs
+Returns a named list of pathways and corresponding gene IDs
 }
 \description{
-Function used to read in gmt file from the Broad Institute
+Function used to read in a .gmt file from the Broad Institute
 }
 \author{
 David Chisanga
 }
-\keyword{gmt,read,file,broad}
+\keyword{broad}
+\keyword{file,}
+\keyword{gmt,}
+\keyword{read,}

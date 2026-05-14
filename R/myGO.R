@@ -6,8 +6,7 @@
 #'@param file.path String value of the path to the file
 #'@export
 #'@return Returns a data frame consisting of akk enriched GO terms
-#'@examples
-
+#' TODO
 rungoana <- function(file.path)
 {
 

@@ -5,20 +5,26 @@
 \title{Function to download gene info files}
 \usage{
 download.geneInfo(
-  species = "Hs",
-  database = "RefSeq",
-  version = 94,
-  file.age = 3
+  species = c("Hs", "Mm"),
+  database = c("RefSeq", "Ensembl", "GENCODE"),
+  version = 100,
+  file.age = 3,
+  recent = FALSE
 )
 }
 \arguments{
-\item{species}{Character symbol of species to download, default is Hs. Use Mm for mouse and}
+\item{species}{Character symbol of species to download. Default is "Hs" (Human). Use "Mm" for mouse.}
 
-\item{database}{String name of database to download from. RefSeq by default. Use Ensembl}
+\item{database}{String name of database to download from. Options: "RefSeq", "Ensembl", "GENCODE".}
 
-\item{version}{Numeric of the version  of the database to download from}
+\item{version}{Numeric version of the database.}
 
-\item{file.age}{Number representing the age of the file before it can be updated}
+\item{file.age}{Number representing the age of the file in weeks before it prompts for an update.}
+
+\item{recent}{Logical. If TRUE, forces a recent download check.}
+}
+\value{
+The file path to the downloaded RDS file.
 }
 \description{
 Function to download gene info files

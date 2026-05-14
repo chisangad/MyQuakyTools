@@ -2,7 +2,7 @@
 % Please edit documentation in R/myPlotFunctions.R
 \name{plotMD.dc}
 \alias{plotMD.dc}
-\title{Function that emulates the plotMD function in limma}
+\title{Emulate plotMD function}
 \usage{
 plotMD.dc(
   object,
@@ -10,7 +10,7 @@ plotMD.dc(
   coef = NULL,
   cex.main = 1,
   xlab = "Average log-expression",
-  include.abline = T,
+  include.abline = TRUE,
   ylab = "logFC",
   cex.lbl = 0.6,
   angle = 30,
@@ -18,7 +18,7 @@ plotMD.dc(
   ylim = NULL,
   cex = 0.3,
   de.cols = c("red", "blue"),
-  include.labels = T,
+  include.labels = TRUE,
   label.only = NULL,
   main = column,
   status,
@@ -36,7 +36,9 @@ plotMD.dc(
 
 \item{column}{integer, column of object to be plotted.}
 
-\item{coef}{alternative to column for fitted model objects. If specified, then column is ignored.}
+\item{coef}{alternative to column for fitted model objects.}
+
+\item{cex.main}{numeric, size of main title}
 
 \item{xlab}{String, x-axis label}
 
@@ -44,15 +46,40 @@ plotMD.dc(
 
 \item{ylab}{String, y-axis label}
 
+\item{cex.lbl}{numeric, size of labels}
+
+\item{angle}{numeric, angle of arrows}
+
 \item{xlim}{numeric vector, limits on the x-axis}
 
 \item{ylim}{numeric vector, limits on the y-axis}
 
+\item{cex}{numeric, point size}
+
 \item{de.cols}{vector list of colours used for highlght up-regulated and down-regulated genes}
 
-\item{...}{extra parameters are passed to the}
+\item{include.labels}{logical, whether to label points}
+
+\item{label.only}{character vector of specific genes to label}
+
+\item{main}{String, main title}
+
+\item{status}{DE status vector}
+
+\item{label.ids}{character vector of IDs to highlight}
+
+\item{max.distance}{numeric, max distance for labels}
+
+\item{minDist}{numeric, minimum distance between labels}
+
+\item{arrow.col}{string, arrow color}
+
+\item{label.offset}{numeric, text offset}
+
+\item{srt.lbl}{numeric, label rotation}
+
+\item{...}{extra parameters passed to plot}
 }
 \description{
-This function is a wrapper function to the plotMD \code{\link[limma:plotMD]{plotMD}} function in \code{\link[limma]{limma}} but adds
-the ability to highlight selected genes or other features of interest
+Wrapper function to the \code{\link[limma]{plotMD}} function with the ability to highlight selected genes.
 }

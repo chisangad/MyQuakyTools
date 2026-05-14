@@ -12,7 +12,8 @@ generateKableTables(
   booktabs = T,
   full.width = F,
   latex.options = switch("basic", basic = c("basic", "HOLD_position"), scale =
-    c("scale_down", "HOLD_position"), repeat_header = c("HOLD_position", "repeat_header")),
+    c("scale_down", "HOLD_position"), repeat_header = c("HOLD_position",
+    "repeat_header")),
   row.names = F,
   digits = 2,
   align = NULL,

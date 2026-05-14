@@ -2,24 +2,23 @@
 % Please edit documentation in R/myFunctions.R
 \name{build.MSig2R}
 \alias{build.MSig2R}
-\title{Save gmt 2 R data file}
+\title{Save gmt to R data file}
 \usage{
 build.MSig2R(gmt.files, from.tax_id = 9606, to.tax_id = 10090)
 }
 \arguments{
-\item{from.tax_id}{Taxonomy ID of specie of current MSig gmt file}
+\item{gmt.files}{Character vector of paths to gmt files.}
 
-\item{to.tax_id}{Taxonomy ID of desires}
+\item{from.tax_id}{Taxonomy ID of species of current MSig gmt file.}
 
-\item{gmt.file}{Path to gmt file}
+\item{to.tax_id}{Taxonomy ID of desired species.}
 }
 \value{
-Returns a list of pathways and corresponding gene IDs
+Returns a list of the processed pathways.
 }
 \description{
-Function used to save gmt file from the Broad Institute
+Translates and saves gmt files.
 }
 \author{
 David Chisanga
 }
-\keyword{gmt,save,file,broad}

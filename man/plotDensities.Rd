@@ -12,38 +12,37 @@ plotDensities(
   cex.lab = 0.9,
   cex.axis = 0.8,
   line.cols = NULL,
-  legend = T,
+  legend = TRUE,
   y.lim = NULL,
   ...
 )
 }
 \arguments{
-\item{raw.counts}{Matrix/Dataframe of raw counts}
+\item{raw.counts}{Matrix/Dataframe of raw counts.}
 
-\item{log.base}{Numeric value of the base of the log to be used. 2 by default}
+\item{log.base}{Numeric value of the base of the log to be used. Default is 2.}
 
-\item{main}{Title of plot}
+\item{main}{Title of plot.}
 
-\item{cex.legend}{Numeric value of the text size on the legend}
+\item{cex.legend}{Numeric value of the text size on the legend.}
 
-\item{cex.lab}{Numeric value of the size of the axis labels}
+\item{cex.lab}{Numeric value of the size of the axis labels.}
 
-\item{cex.axis}{Numeric value of the size of the tick-labels}
+\item{cex.axis}{Numeric value of the size of the tick-labels.}
 
-\item{legend}{Logic value to display the legend}
+\item{line.cols}{Vector of colors. If NULL, generates a colorblind-friendly palette.}
 
-\item{cex.main}{Numeric value of the size of the title}
+\item{legend}{Logical. Display the legend.}
+
+\item{y.lim}{Numeric vector of length 2 for y-axis limits.}
+
+\item{...}{Additional graphical parameters.}
 }
 \value{
-Generates plot of density values for each column (sample) and returns a list of densities
+Generates plot and invisibly returns a list of densities.
 }
 \description{
-Function to generate a multi-density plot
-}
-\examples{
-raw.counts<-matrix(rnbinom(100,size=1,mu=10),25,4)
-plotDensities(raw.counts)
-plotDensities(raw.counts,10)
+Generates a multi-density plot of raw counts.
 }
 \author{
 David Chisanga

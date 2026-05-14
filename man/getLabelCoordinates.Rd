@@ -13,21 +13,21 @@ getLabelCoordinates(
 )
 }
 \arguments{
-\item{axis}{String of axis on which labels/arrows are shown, values include x-axis or y-axis. y-axis by default}
+\item{axis}{String of axis on which labels/arrows are shown ("x-axis" or "y-axis")}
 
-\item{max.distance}{numeric, the maximum distance from the 0 coordinate to place labels, 11 by default}
+\item{max.distance}{numeric, the maximum distance from the 0 coordinate to place labels}
 
-\item{arrow.coordinates}{list of numeric coordinates on the axis on which labels will be placed}
+\item{arrow.coordinates}{list of numeric coordinates}
 
-\item{label.coordinates}{list of numeric coordinates on the other axis for labels}
+\item{label.coordinates}{list of numeric coordinates}
 
 \item{minDist}{The minimum expected distance between near labels}
 }
 \value{
-Returns a list of spaced coordinates
+Returns a list containing arrow.y and label.x coordinates
 }
 \description{
-A function to space labels on a plot with Arrows, usually MDS plots and Volcano plot
+A function to generate coordinates for labels and arrows
 }
 \author{
 David Chisanga

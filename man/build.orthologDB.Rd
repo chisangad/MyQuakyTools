@@ -4,12 +4,14 @@
 \alias{build.orthologDB}
 \title{Build ortholog DB}
 \usage{
-build.orthologDB()
+build.orthologDB(db = c("all", "ncbi", "mgi", "hgnc"))
+}
+\arguments{
+\item{db}{Character vector of databases to include. Options: "all", "ncbi", "mgi", "hgnc".}
 }
 \value{
-The database is written and saved to a R data file and can be read back to R for further inspection or analysis
+A data frame of collated orthologs, which is also saved locally as an RDS file.
 }
 \description{
-This function is used to collate gene orthologs between human and mouse genes
-from several sources.
+Collate gene orthologs between human and mouse genes from several sources.
 }

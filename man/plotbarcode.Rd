@@ -17,7 +17,7 @@ plotbarcode(
   worm = TRUE,
   span.worm = 0.45,
   xlab = "Statistic",
-  split.worm = T,
+  split.worm = TRUE,
   col.uenrich = "pink",
   col.denrich = "lightblue",
   enrichment.height = NULL,

@@ -5,35 +5,27 @@
 \title{Map symbols to gene IDs}
 \usage{
 get_geneIDs(
-  database = "RefSeq",
+  database = c("RefSeq", "Ensembl", "GENCODE"),
   gene.symbols = NULL,
-  specie = "Mm",
-  ignore.case = F
+  specie = c("Mm", "Hs"),
+  ignore.case = FALSE
 )
 }
 \arguments{
-\item{database}{a string value of the database to search against, accepted values include; 'RefSeq', 'Ensembl' and 'GENCODE','RefSeq' by default}
+\item{database}{String value of the database to search against: 'RefSeq', 'Ensembl' or 'GENCODE'.}
 
-\item{gene.symbols}{list of gene symbols to look up, NULL by default}
+\item{gene.symbols}{Character vector of gene symbols to look up.}
 
-\item{specie}{a string value of the species to look up, accepted values are 'Mm' for Mouse and 'Hs' for Homo sapiens, 'Mm' by default}
+\item{specie}{String value of the species: 'Mm' (Mouse) or 'Hs' (Human).}
 
-\item{ignore.case}{logic value indicates whether or not to ignore the case of the symbols during the search, FALSE by default}
+\item{ignore.case}{Logical. Whether to ignore the case of the symbols during the search.}
 }
 \value{
-Returns a list with the input gene symbols as keys and their associated details including, GeneID, Symbol and Synonyms.
+A list with the input gene symbols as keys and their associated details.
 }
 \description{
-The function maps gene symbols to gene IDs
-}
-\examples{
-rst=get.geneIDs(gene.symbols = c("mcad","Kras"),specie = "Hs",ignore.case = T)
+Maps gene symbols to gene IDs across different databases.
 }
 \author{
 David Chisanga
 }
-\keyword{EnsemblID}
-\keyword{EntrezID,}
-\keyword{Gene}
-\keyword{Genes,}
-\keyword{Symbol,}

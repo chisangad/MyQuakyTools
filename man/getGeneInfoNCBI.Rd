@@ -4,7 +4,7 @@
 \alias{getGeneInfoNCBI}
 \title{Get NCBI RefSeq gene information}
 \usage{
-getGeneInfoNCBI(species = "Mm", info.details = NULL, verbose = F)
+getGeneInfoNCBI(species = "Mm", info.details = NULL, verbose = F, recent = F)
 }
 \arguments{
 \item{species}{String indicating for which gene info is required, values can 'Hs' or 'Mm'. 'Mm' by default}
@@ -12,6 +12,8 @@ getGeneInfoNCBI(species = "Mm", info.details = NULL, verbose = F)
 \item{info.details}{Character list of columns/details to return. All columns are returned by default}
 
 \item{verbose}{Logical value, enables the printout of messages during downloads}
+
+\item{recent}{Logical value, whether to obtain recent gene information}
 }
 \value{
 Returns a dataframe with rows corresponding to genes

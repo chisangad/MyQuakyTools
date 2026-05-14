@@ -8,7 +8,8 @@ getGeneInfoEnsembl(
   species = "Mm",
   info.details = NULL,
   verbose = F,
-  version = 94
+  version = 94,
+  recent = F
 )
 }
 \arguments{

@@ -14,18 +14,14 @@ spaceLabels(
 \item{labelCoords}{a numeric vector list of coordinates}
 
 \item{minDist}{The minimum expected distance between near labels}
+
+\item{boundaries}{numeric vector of length 2 indicating plotting boundaries}
 }
 \value{
 Returns a vector of spaced coordinates for labels
 }
 \description{
-This function is used to space multiple text labels
-}
-\examples{
-labels=list(seq(1,3,0.3))
-names(labels)=paste0("Label0000",1:length(labels))
-spaceLabels(labels,0.5)
-
+A function to space labels on a plot with Arrows, usually MDS plots and Volcano plot
 }
 \author{
 David Chisanga

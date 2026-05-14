@@ -16,9 +16,10 @@ Returns a numeric value of the age of the file in weeks
 Returns the age of a file in weeks
 }
 \examples{
+\dontrun{
 file.create("Example.txt")
 checkFileAge("Example.txt")
-
+}
 }
 \author{
 David Chisanga

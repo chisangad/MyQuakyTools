@@ -2,30 +2,25 @@
 % Please edit documentation in R/myFunctions.R
 \name{check_gene_history}
 \alias{check_gene_history}
-\title{A check gene history function}
+\title{Check gene history}
 \usage{
-check_gene_history(GeneID, speciesID = 9606, verbose = F)
+check_gene_history(GeneID, speciesID = 9606, verbose = FALSE, recent = FALSE)
 }
 \arguments{
-\item{GeneID}{list of gene Ids to check for that are likely to have been discontinued/replaced, has to be EntrezIDs}
+\item{GeneID}{Numeric/Character vector of Entrez Gene IDs to check.}
 
-\item{speciesID}{Numeric value of any valid species ID such as 9606 for humans and 10090 for mouse. 9606 by default}
+\item{speciesID}{Numeric value of a valid species ID (e.g., 9606 for humans, 10090 for mouse).}
 
-\item{verbose}{Logical value. Indicates whether to print to the standard screen output messages}
+\item{verbose}{Logical. Indicates whether to print progress messages.}
+
+\item{recent}{Logical. Indicates whether to force a fresh download.}
 }
 \value{
-Returns a vector list of Discontinued and Current GeneIds from the list entered
-check.gene.history()
+A list containing data frames for 'Discontinued' and 'Current' Gene IDs.
 }
 \description{
-This function checks the history/changes that a given gene ID has undergone
-}
-\examples{
-check.gene.history(c(243187,319599,319785),10090)
-
+This function checks the history/changes that a given gene ID has undergone.
 }
 \author{
 David Chisanga
 }
-\keyword{Genes,}
-\keyword{History}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/myPlotFunctions.R
 \name{labelMDplot}
 \alias{labelMDplot}
-\title{Wrapper function to include arrows to a MD plot in limma}
+\title{Wrapper function to include arrows to an MD plot}
 \usage{
 labelMDplot(
   x,
@@ -33,16 +33,22 @@ labelMDplot(
 
 \item{symbols}{character of gene symbols to be used in labelling}
 
+\item{cex.lbl}{size of labels}
+
 \item{arrow.angle}{angle of arrows}
 
 \item{text.srt}{angle rotation for labels}
 
 \item{col.lbl}{character vector of colors for labels}
 
-\item{cex}{size of labels}
+\item{axis}{Axis to label}
+
+\item{col.arrow}{Color of the arrow}
+
+\item{max.distance}{Maximum distance}
 }
 \description{
-Wrapper function to include arrows to a MD plot in limma
+Wrapper function to include arrows to an MD plot
 }
 \author{
 David Chisanga
